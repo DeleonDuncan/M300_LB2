@@ -17,7 +17,6 @@ Vagrant Version nach der installation:
       C:\Users\DeleonDuncan vagrant -v\
       Vagrant 2.2.3
 
-<br></br>
 
 ### 2. Visualstudio-Code
 
@@ -46,6 +45,7 @@ Visual Studio wurde mit folgenden Extensions installiert.
 
 
 
+<br></br>
 
 ## Kriterien 2:
       
