@@ -134,5 +134,25 @@ Vagrant:
 		Ich war überrascht, dass man mit einem File, dem *Vagrantfile*, eine VM mit der kompletten
 		konfiguration starten und so schnell wieder zerströren kann. 
 		Meiner Meinung nach ist das für Testfälle perfekt.
+		
 
+Git-Client:
+
+		Ich habe Git-Client testweise schon benutzt. Aber ich fand
+		es damals eher verwirrend mit dem Git Repo, dem Lokalen Repo, den commits,
+		pulls oder dem origin master. Mittlerweile verstehe ich es recht gut,
+		und die Verwaltung, ist nicht mehr so schwer wie auch schon.
+
+
+<br></br>
+
+
+## Kriterien 3:
+
+	1.
+	2.
+	3.
+	4.
+	5.
+	
 
