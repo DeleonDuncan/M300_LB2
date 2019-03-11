@@ -149,10 +149,18 @@ Git-Client:
 
 ## Kriterien 3:
 
-	1.
-	2.
-	3.
-	4.
-	5.
+	1. Bestehende VM aus Vagrant-Cloud einrichten
+	2. Kennt die Vagrant Befehle
+	3. Eingerichtete Umgebung ist Dokumentiert
+	4. andere Vorgefertigte VM eingerichtet
+	5. Projekt mit Git und Markdown dokumentiert
 	
+
+
+### 1. Bestehende VM aus Vagrant-Cloud einrichten
+
+Ins Verzeichnis IOT gewechselt, die VM initialisiert
+und neu gestartet:
+
+	vagrant up && vagrant reload
 
