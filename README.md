@@ -213,15 +213,25 @@ In der Umgebung lam haben wir
 
 	1. Firewall eingerichtet
 	2. Reverse Proxy eingerichtet
-	3. Benutzer mit Rechtevergabe ist eingerichtet
-	4. Zugang mit SSH-Tunnel abgesichert
-	5. Sicherheitsmassnahmen sind dokumentiert.
+	3. Zugang mit SSH-Tunnel abgesichert
+	4. Sicherheitsmassnahmen sind dokumentiert.
+	5. Testfälla
 	
-	
-### 5. Firewall eingerichtet
+### 1. Firewall eingerichtet
 
 	Firewall mit Vagrant up gestartet.
 	
-	Nach unsicherem SSH Key konnte ich mit : *Vagrant up --provision die VM neu aufsetzen
+	Nach unsicherem SSH Key konnte ich mit : *Vagrant up --provision die VM neu laden
+	
+	Firewall Config:
+	root@master:/etc/ufw# ufw status
+	Status: active
+
+	To                         Action      From
+	--                         ------      ----
+	22/tcp                     ALLOW       Anywhere
+	80                         ALLOW       192.168.55.101
+	22/tcp (v6)                ALLOW       Anywhere (v6)
+
 	
 	
