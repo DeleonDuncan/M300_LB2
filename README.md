@@ -258,6 +258,6 @@ In der Umgebung lam haben wir
 
 ### 4. Sicherheitsmassnahmen sind dokumentiert
 
-	- [x] Firewall ist aktiv und regeln sind gesetzt.
-	- [x] Reverse Proxy läuft
-	- [x] Per SSH Tunnel abgesi
+- [x] Firewall ist aktiv und regeln sind gesetzt.
+- [x] Reverse Proxy läuft
+- [x] Per SSH Tunnel abgesi
