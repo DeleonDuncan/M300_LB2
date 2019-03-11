@@ -270,4 +270,3 @@ Webserver kann curl auf master machen. | OK
 Webserver kann curl auf DB machen.     | OK
 DB kann nicht auf master zugreifen     | OK
 Master kann nicht auf DB zugreifen     | OK
-
