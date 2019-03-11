@@ -264,10 +264,10 @@ In der Umgebung lam haben wir
 
 ### 5. Testfälle
 
-          Test 			|			Soll	                | Analyse
-------------------------------- | --------------------------------------------- | --------
-Von Web Server, curl auf master | Der Webserver soll auf Master zugriff haben.	| OK
-Von Web Server, curl auf DB	| Webserver sollte zugreifen können		| OK
-Von DB auf Master zugreifen	| Soll nicht zugreifen können.          	| OK
-Von Master auf DB zugreifen	| Soll nicht zugreifen können.          	| OK
+          Test 			| Analyse
+------------------------------- | --------
+Von Web Server, curl auf master | OK
+Von Web Server, curl auf DB	| OK
+Von DB auf Master zugreifen	| OK
+Von Master auf DB zugreifen	| OK
 
