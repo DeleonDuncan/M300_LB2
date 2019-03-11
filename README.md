@@ -268,12 +268,8 @@ Test 				| 		Soll 		| 		Ist		    | Analyse
 ------------------------------------------------------------------------------------------------------------------
 Von Web Server, curl auf master | Der Webserver soll auf den 	| Der Webserver kann auf den Master | OK
 				| Master zugreifen können.	| zugreifen.			    |
-				|				|				    |
-Von Web Server, curl auf DB	| Webserver sollte zugreifen 	| Webserver kann zugreifen.	    | OK
-				| können.			|				    |
-				|				|				    |
-Von DB auf Master zugreifen	| Soll nicht zugreifen können.  | Kann nicht zugreifen.		    | OK
-				|				|				    |
-				|				|				    |
+Von Web Server, curl auf DB	| Webserver sollte zugreifen	| Webserver kann zugreifen.	    | OK
+				| können.		 	| 	   			    |
+Von DB auf Master zugreifen	| Soll nicht zugreifen können.  | Kann nicht zugreifen.		    | OK			
 Von Master auf DB zugreifen	| Soll nicht zugreifen können.  | Kann nicht zugreifen.		    | OK
 
