@@ -159,10 +159,9 @@ Git-Client:
 
 ### 1. Bestehende VM aus Vagrant-Cloud einrichten
 
-Ins Verzeichnis IOT gewechselt, die VM initialisiert
-und neu gestartet:
+Ins Verzeichnis lam gewechselt, die VM gestartet
 
-	vagrant up && vagrant reload
+	vagrant up 
 
 
 ### 2. Kennt die Vagrant Befehle
@@ -182,4 +181,10 @@ vagrant status    | Gibt den Stataus einer VM aus.
 
 ### 3. Eingerichtete Umgebung ist Dokumentiert
 
+In der Umgebung lam haben wir
+
+*Web Server mit Apache und MySQL UserInterface Adminer
+*Datenbank Server mit MySQL
+*Die Verbindung Web - Datenbank erfolgt mittels Internen Netzwerk Adapter.
+*Von Aussen ist nur der HTTP Port auf dem Web Server Erreichbar.
 
