@@ -179,3 +179,7 @@ vagrant destroy   | Stopt und löscht die gesamte VM
 vagrant -v        | Zeigt die vagrant Version an
 vagrant status    | Gibt den Stataus einer VM aus.
 
+
+### 3. Eingerichtete Umgebung ist Dokumentiert
+
+
