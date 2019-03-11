@@ -264,8 +264,8 @@ In der Umgebung lam haben wir
 
 ### 5. Testfälle
 
-|            Test 		| 	      Soll 		| 		Ist		    | Analyse
-------------------------------------------------------------------------------------------------------------------
+          Test 			| 	      Soll 		| 		Ist		    | Analyse
+--------------------------------| ------------------------------|-----------------------------------|---------
 Von Web Server, curl auf master | Der Webserver soll auf den 	| Der Webserver kann auf den Master | OK
 				| Master zugreifen können.	| zugreifen.			    |
 Von Web Server, curl auf DB	| Webserver sollte zugreifen	| Webserver kann zugreifen.	    | OK
