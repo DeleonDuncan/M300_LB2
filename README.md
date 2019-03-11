@@ -164,3 +164,18 @@ und neu gestartet:
 
 	vagrant up && vagrant reload
 
+
+### 2. Kennt die Vagrant Befehle
+
+Befehl            | Funktion
+----------------- | -------------
+vagrant up 	  | Startet vagrant Umgebung
+vagrant resume    | Setzt eine suspendierte Maschine fort.
+vagrant reload    | Startet die VM neu, liest das Config File neu ein
+vagrant ssh       | Verbinden zu einer Maschine via SSH
+vagrant halt      | Stopt die vagrant Maschine
+vagrant suspend   | suspendiert eine VM
+vagrant destroy   | Stopt und löscht die gesamte VM
+vagrant -v        | Zeigt die vagrant Version an
+vagrant status    | Gibt den Stataus einer VM aus.
+
