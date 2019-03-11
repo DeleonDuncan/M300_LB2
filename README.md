@@ -215,7 +215,7 @@ In der Umgebung lam haben wir
 	2. Reverse Proxy eingerichtet
 	3. Zugang mit SSH-Tunnel abgesichert
 	4. Sicherheitsmassnahmen sind dokumentiert.
-	5. Testfälla
+	5. Testfälle
 	
 ### 1. Firewall eingerichtet
 
@@ -234,4 +234,30 @@ In der Umgebung lam haben wir
 	22/tcp (v6)                ALLOW       Anywhere (v6)
 
 	
-### 2. Firewall eingerichtet	
+### 2. Reverse Proxy eingerichtet	
+
+	root@web01:/etc/apache2/sites-available# cat 001-reverseproxy.conf
+	# Allgemeine Proxy Einstellungen
+	ProxyRequests Off
+	<Proxy *>
+	      Order deny,allow
+	      Allow from all
+	</Proxy>
+
+	# Weiterleitungen master
+	ProxyPass /master http://master
+	ProxyPassReverse /master http://master
+	root@web01:/etc/apache2/sites-available#
+
+
+
+### 3. Zugang mit SSH Tunnel abgesichert
+
+	Ja
+	
+
+### 4. Sicherheitsmassnahmen sind dokumentiert
+
+	- [x] Firewall ist aktiv und regeln sind gesetzt.
+	- [x] Reverse Proxy läuft
+	- [x] Per SSH Tunnel abgesi
