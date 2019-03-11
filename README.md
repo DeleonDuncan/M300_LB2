@@ -183,8 +183,8 @@ vagrant status    | Gibt den Stataus einer VM aus.
 
 In der Umgebung lam haben wir
 
-*Web Server mit Apache und MySQL UserInterface Adminer
-*Datenbank Server mit MySQL
-*Die Verbindung Web - Datenbank erfolgt mittels Internen Netzwerk Adapter.
-*Von Aussen ist nur der HTTP Port auf dem Web Server Erreichbar.
+* Web Server mit Apache und MySQL UserInterface Adminer
+* Datenbank Server mit MySQL
+* Die Verbindung Web - Datenbank erfolgt mittels Internen Netzwerk Adapter.
+* Von Aussen ist nur der HTTP Port auf dem Web Server Erreichbar.
 
