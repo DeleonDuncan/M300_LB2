@@ -264,7 +264,7 @@ In der Umgebung lam haben wir
 
 ### 5. Testfälle
 
-          Test 			| Analyse
+Test 			| Analyse
 ------------------------------- | --------
 Von Web Server, curl auf master | OK
 Von Web Server, curl auf DB	| OK
