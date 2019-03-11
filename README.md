@@ -204,3 +204,24 @@ In der Umgebung lam haben wir
 ### 5. Mittels Git & Markdown Dokumentiert
 
 	Wie man sieht, habe ich das entsprechend dokumentiert.
+	
+	
+
+
+
+## Kriterien 4:
+
+	1. Firewall eingerichtet
+	2. Reverse Proxy eingerichtet
+	3. Benutzer mit Rechtevergabe ist eingerichtet
+	4. Zugang mit SSH-Tunnel abgesichert
+	5. Sicherheitsmassnahmen sind dokumentiert.
+	
+	
+### 5. Firewall eingerichtet
+
+	Firewall mit Vagrant up gestartet.
+	
+	Nach unsicherem SSH Key konnte ich mit : *Vagrant up --provision die VM neu aufsetzen
+	
+	
