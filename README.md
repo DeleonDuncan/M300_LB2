@@ -199,3 +199,8 @@ In der Umgebung lam haben wir
 	User:root 
 	Passwort:admin 
 	kann man sich einloggen.
+
+
+### 5. Mittels Git & Markdown Dokumentiert
+
+	Wie man sieht, habe ich das entsprechend dokumentiert.
