@@ -188,3 +188,14 @@ In der Umgebung lam haben wir
 * Die Verbindung Web - Datenbank erfolgt mittels Internen Netzwerk Adapter.
 * Von Aussen ist nur der HTTP Port auf dem Web Server Erreichbar.
 
+### 4. andere Vorgefertigte VM eingerichtet
+
+	WebServer ist unter 192.168.55.101:80 erreichbar. Nicht mit Port 8080
+
+	MySQL Server ist unter localhost:8080/adminer.php erreichbar.
+	
+	Mittels:
+	Serveradresse 192.168.55.100 
+	User:root 
+	Passwort:admin 
+	kann man sich einloggen.
