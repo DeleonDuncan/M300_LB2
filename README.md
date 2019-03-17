@@ -270,3 +270,43 @@ Webserver kann curl auf master machen. | OK
 Webserver kann curl auf DB machen.     | OK
 DB kann nicht auf master zugreifen     | OK
 Master kann nicht auf DB zugreifen     | OK
+
+
+
+###### LB2
+
+### MySQL & Nextcloud mit anbindung an Webmin
+
+
+
+vagrantfile:
+
+Das standard Passwort für die Vagrant vm ist: p/w vagrant/vagrant
+
+	Vagrant.configure("2") do |config|
+
+	  config.vm.box = "ubuntu/xenial64"
+
+	  # Creates a public network, which generally matches the bridged network.
+	  # config.vm.network "public_network"
+	  config.vm.network "private_network", ip:"192.168.10.101" 
+	  config.vm.network "forwarded_port", guest:8080, host:8080, auto_correct: true
+
+	  # Share an additional folder to the guest VM.
+	  # config.vm.synced_folder "../data", "/vagrant_data"
+
+	  config.vm.provider "virtualbox" do |vb|
+	     vb.memory = "2048"
+	  end
+
+	  # Docker Provisioner
+	  config.vm.provision "docker" do |d|
+	   d.pull_images "mysql"
+	   d.pull_images "nextcloud"
+	   d.run "nextcloud_mysql", image: "mysql", args: "-e MYSQL_ROOT_PASSWORD=admin -e MYSQL_USER=nextcloud -e MYSQL_PASSWORD=admin -e MYSQL_DATABASE=nextcloud --restart=always"
+	   d.run "nextcloud", image: "nextcloud", args: "--link nextcloud_mysql:mysql -p 8080:80 --restart=always"
+	  end
+	end
+	
+
+Ich verwende zwei Images. *"Mysql"* und *"nextcloud"*
