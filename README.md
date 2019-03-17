@@ -273,11 +273,9 @@ Master kann nicht auf DB zugreifen     | OK
 
 
 
-###### LB2
+###### Modul 300-LB2  MySQL & Nextcloud mit Einbindung von Webmin
 
-### MySQL & Nextcloud mit anbindung an Webmin
-
-
+### MySQL & Nextcloud
 
 vagrantfile:
 
@@ -309,4 +307,72 @@ Das standard Passwort für die Vagrant vm ist: p/w vagrant/vagrant
 	end
 	
 
-Ich verwende zwei Images. *"Mysql"* und *"nextcloud"*
+
+Zuerst setze ich die VM und das Netzwerk auf.
+	
+	config.vm.box = "ubuntu/xenial64"
+
+	config.vm.network "private_network", ip:"192.168.10.101" 
+	config.vm.network "forwarded_port", guest:8080, host:8080, auto_correct: true
+
+
+Ich verwende zwei Images.
+
+	d.pull_images "mysql"
+	d.pull_images "nextcloud"
+
+Anschliessend führen wir MySQL mit folgednen Parameter aus:
+
+* MYSQL_ROOT_PASSWORD=admin
+* MYSQL_USER=nextcloud
+* MYSQL_PASSWORD=admin
+* MYSQL_DATABASE=nextcloud
+
+Für Nextcloud werden folgende Parameter verwendet:
+
+
+* --link nextcloud_mysql:mysql
+* -p 8080:80
+* --restart=always
+
+
+### Webmin
+
+Webmin ist eine webbasierte Schnittstelle zur Systemadministration für Unix. Mit jedem modernen Webbrowser können Sie Benutzerkonten, Apache, DNS, File Sharing und vieles mehr einrichten. Webmin macht es überflüssig, Unix-Konfigurationsdateien wie /etc/passwd manuell zu bearbeiten, und lässt Sie ein System von der Konsole aus oder aus der Ferne verwalten.
+
+
+Zuerst müssen wir das Webmin Repository hinzufügen, sodass wir über unseren Packet Manager Webmin installieren können.
+
+Wir öffnen diese File mit Vim, stelle fest, dass man es editieren kann.(Berechtigung)
+
+    sudo vim /etc/apt/sources.list
+
+Dann ergänzen wir diese URL zu unterst in diesem File
+    /etc/apt/sources.list
+
+    . . . 
+    deb http://download.webmin.com/download/repository sarge contrib
+
+
+Speichere das File und schliesse Vim
+
+Zunächst müssen wir diesen GPG Key hinzutügen, dass unser System dem Repository vertraut
+
+    wget http://www.webmin.com/jcameron-key.asc
+    sudo apt-key add jcameron-key.asc
+
+Dann updaten wir den Package Manager dass er das neue Repository hat
+
+    sudo apt update 
+
+Dann installieren wir Web:
+
+    sudo apt install webmin 
+
+Wenn die installation Fertig ist, haben wir diesen Output:
+
+	Webmin install complete. You can now login to 
+	https://your_server_ip:10000 as root with your 
+	root password, or as any user who can use `sudo`.
+	
+	
