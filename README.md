@@ -273,9 +273,9 @@ Master kann nicht auf DB zugreifen     | OK
 
 
 
-###### Modul 300-LB2  MySQL & Nextcloud mit Einbindung von Webmin
+# Modul 300-LB2  MySQL & Nextcloud mit Einbindung von Webmin
 
-### MySQL & Nextcloud
+## MySQL & Nextcloud
 
 vagrantfile:
 
@@ -336,7 +336,7 @@ Für Nextcloud werden folgende Parameter verwendet:
 * --restart=always
 
 
-### Webmin
+## Webmin
 
 Webmin ist eine webbasierte Schnittstelle zur Systemadministration für Unix. Mit jedem modernen Webbrowser können Sie Benutzerkonten, Apache, DNS, File Sharing und vieles mehr einrichten. Webmin macht es überflüssig, Unix-Konfigurationsdateien wie /etc/passwd manuell zu bearbeiten, und lässt Sie ein System von der Konsole aus oder aus der Ferne verwalten.
 
