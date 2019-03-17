@@ -375,4 +375,7 @@ Wenn die installation Fertig ist, haben wir diesen Output:
 	https://your_server_ip:10000 as root with your 
 	root password, or as any user who can use `sudo`.
 	
-	
+
+Diese installation habe ich zusätzlich noch in einem Script festgehalten:
+
+https://github.com/DeleonDuncan/M300_LB2/blob/master/webmin.sh
