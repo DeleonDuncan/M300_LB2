@@ -377,6 +377,7 @@ Wenn die installation Fertig ist, haben wir diesen Output:
 	
 
 Diese installation habe ich zusätzlich noch in einem Script festgehalten:
+Welches im Vagrantfile integriert ist.
 
 		#Installation of Webmin
 
@@ -387,7 +388,7 @@ Diese installation habe ich zusätzlich noch in einem Script festgehalten:
 
 		sudo apt update
 
-		sudo apt install webmin
+		sudo apt install webmin -y
 
 		echo "Webmin installed successfully!"
 		
