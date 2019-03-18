@@ -19,7 +19,12 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider "virtualbox" do |vb|
      vb.memory = "2048"
+   
+  # Installs Webmin via Script
+  config.vm.provision "shell", path: "webmin.sh"
   end
+
+  
 
   # Docker Provisioner
   config.vm.provision "docker" do |d|
